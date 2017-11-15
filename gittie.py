@@ -12,4 +12,4 @@ def add(a, b):
 
 
 def joke():
-    print("Why is an egg funny?\nBecause it has a yoke.")ű
+    print("Why is an egg funny?\nBecause it has a yoke.")
