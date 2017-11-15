@@ -1,4 +1,4 @@
-def introdue():
+def introdue(variable):
     print("""
 
                                                                        ,---,                                                                                           ,---,  
@@ -17,6 +17,11 @@ def introdue():
 |   ,/       \   \  /  ---`-'  ---`-'         \_ ; |        '---'         |   ;/                   \   \ .'   |  ,   /  ---`-'   ---`-'  |  ,   /  \   \  /         `-- -`, ; 
 '---'         `----'                          /  ,"                       '---'                     `---`      ---`-'                     ---`-'    `----'   
     """)
+    try:
+        int(variable)
+    except ValueError:
+        return "Error"
+    return "Success"
 
 
 def add(a, b):
@@ -25,5 +30,7 @@ def add(a, b):
 
 def joke():
     print("Why is an egg funny?\nBecause it has a yoke.")
+    print("http://patorjk.com/software/taag/#p=display&h=2&v=2&f=Electronic&t=Hello%2C%20I'Mw%20Gittie%20!")
+introdue(9)
 
-introdue()
+joke()
