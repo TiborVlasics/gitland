@@ -1,5 +1,10 @@
-def introdue():
+def introdue(variable):
     print("Hello, I'm Gittie!")
+    try:
+        int(variable)
+    except ValueError:
+        return "Error"
+    return "Success"
 
 
 def add(a, b):
